@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="https://kit.fontawesome.com/379b237a47.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .wrap {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .desktop,
+        header {
+            height: 300px;
+        }
+
+
+
+        .desktop {
+            float: left;
+            width: 300px;
+            background-color: blanchedalmond;
+        }
+
+        .desktop ul {
+            list-style: none;
+        }
+
+        .desktop a {
+            text-decoration: none;
+            color: black;
+            line-height: 60px;
+            font-size: 20px;
+
+        }
+
+        .desktop i {
+            margin: 0 25px 0 15px;
+            border-right: 1px solid black;
+            padding-right: 25px;
+        }
+
+        header {
+            float: left;
+            width: calc(100% - 300px);
+            background-image: url(pianino.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .mobile {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <nav class="desktop">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="far fa-play-circle"></i>Start
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-shopping-cart"></i>Oferta</a></li>
+                <li>
+                    <a href="#"><i class="fas fa-rss"></i>Blog</a></li>
+                <li>
+                    <a href="#"><i class="far fa-calendar-alt"></i>Terminarz</a></li>
+                <li>
+                    <a href="#"><i class="far fa-envelope"></i>Kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="far fa-play-circle"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li>
+                    <a href="#"><i class="fas fa-rss"></i></a></li>
+                <li>
+                    <a href="#"><i class="far fa-calendar-alt"></i></a></li>
+                <li>
+                    <a href="#"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+        <header></header>
+    </div>
+    <section>
+        <h1>Witaj w naszym świecie</h1>
+    </section>
+</body>
+
+</html>
