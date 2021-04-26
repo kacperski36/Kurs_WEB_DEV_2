@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #bbb;
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+        }
+
+        nav {
+            align-self: stretch;
+            padding: 15px 0;
+            text-align: center;
+            background-color: #333;
+        }
+
+        header {
+            width: 100%;
+            background-color: royalblue;
+            max-width: 1200px;
+            flex-basis: 25vh;
+        }
+
+        section {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+            max-width: 1200px;
+            background-color: pink;
+        }
+
+        main {
+            flex-grow: 1;
+            background-color: gray;
+        }
+
+        aside {
+            flex-basis: 30%;
+            min-width: 280px;
+            background-color: cadetblue;
+        }
+
+        footer {
+            align-self: stretch;
+            flex-basis: 20vh;
+            background-color: #000;
+        }
+
+        @media (max-width: 1024px) {
+            header {
+                order: -1;
+            }
+
+            section {
+                flex-wrap: wrap;
+            }
+
+            aside {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Nawigacja</nav>
+    <header>Header</header>
+    <section>
+        <main>Główna treść</main>
+        <aside>Kolumna</aside>
+    </section>
+    <footer>Stopka</footer>
+</body>
+
+</html>
